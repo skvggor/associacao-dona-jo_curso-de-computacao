@@ -1,4 +1,4 @@
-# Curso de computação
+# Curso: Introdução a computação/programação
 
 Criamos um curso para 'introdução a programação' e estamos aplicando-o presencialmente na Associação Dona Jô em Mauá, São Paulo, Brasil.
 
