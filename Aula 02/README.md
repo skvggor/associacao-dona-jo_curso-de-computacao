@@ -1,4 +1,4 @@
-# Aula 2 - Ferramentas, Tipos de dados e variáveis
+# Aula 2 - Ferramentas, Tipos de dados e Variáveis
 
 ## Resumo
 
