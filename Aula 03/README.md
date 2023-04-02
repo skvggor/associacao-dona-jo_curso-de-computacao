@@ -109,7 +109,8 @@ console.log(mensagem)
 ```
 
 Nesse exemplo, a variável "diaDaSemana" é inicializada com o valor 5. Em seguida, a estrutura condicional "switch/case" é utilizada para verificar o valor dessa variável e armazenar uma mensagem correspondente na variável "mensagem". No caso do valor ser igual a 5, a mensagem "Hoje é sexta-feira." será armazenada na variável "mensagem" e impressa no console. Se o valor não corresponder a nenhum dos "cases", a mensagem "Não é um dia da semana válido." será armazenada e impressa.
-Exercício:
+
+#### Exercício:
 
 Crie um programa em JavaScript que, a partir da entrada dos dados via prompt e confirm, avalie se uma pessoa está apta ou não a obter a habilitação de motorista. Para ser considerado apto, a pessoa deve:
 
