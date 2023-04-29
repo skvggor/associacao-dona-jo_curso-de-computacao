@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário com Switch</title>
+</head>
+<body>
+  <h1>Descubra o nome do mês</h1>
+  <label for="mes">Digite o número do mês (1-12):</label>
+  <input type="number" id="mes" min="1" max="12">
+  <button onclick="exibirMes()">Exibir mês</button>
+  <p id="nomeMes"></p>
+  <script>
+    function exibirMes() {
+      const mes = document.getElementById('mes').value;
+      const nomeMes = document.getElementById('nomeMes');
+      let nome;
+
+      switch (mes) {
+        case '1':
+          nome = 'Janeiro';
+          break;
+        case '2':
+          nome = 'Fevereiro';
+          break;
+        case '3':
+          nome = 'Março';
+          break;
+        case '4':
+          nome = 'Abril';
+          break;
+        case '5':
+          nome = 'Maio';
+          break;
+        case '6':
+          nome = 'Junho';
+          break;
+        case '7':
+          nome = 'Julho';
+          break;
+        case '8':
+          nome = 'Agosto';
+          break;
+        case '9':
+          nome = 'Setembro';
+          break;
+        case '10':
+          nome = 'Outubro';
+          break;
+        case '11':
+          nome = 'Novembro';
+          break;
+        case '12':
+          nome = 'Dezembro';
+          break;
+        default:
+          nome = 'Mês inválido';
+      }
+
+      nomeMes.textContent = nome;
+    }
+  </script>
+</body>
+</html>

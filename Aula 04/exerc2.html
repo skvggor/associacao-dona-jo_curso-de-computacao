@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudança de Cor com Switch</title>
+  <style>
+    #quadrado {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="quadrado"></div>
+  <script>
+    const quadrado = document.getElementById('quadrado');
+
+    function mudarCor(e) {
+      switch (e.key) {
+        case '1':
+          quadrado.style.backgroundColor = 'red';
+          break;
+        case '2':
+          quadrado.style.backgroundColor = 'green';
+          break;
+        case '3':
+          quadrado.style.backgroundColor = 'blue';
+          break;
+        default:
+          quadrado.style.backgroundColor = 'gray';
+      }
+    }
+
+    document.addEventListener('keydown', mudarCor);
+  </script>
+</body>
+</html>

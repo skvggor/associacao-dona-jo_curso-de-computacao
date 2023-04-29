@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movendo a Bola</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+  <div id="painel">
+    Posição da bola: (<span id="posX">200</span>, <span id="posY">200</span>)
+  </div>
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    const painelX = document.getElementById('posX');
+    const painelY = document.getElementById('posY');
+
+    let bola = {
+      x: canvas.width / 2,
+      y: canvas.height / 2,
+      raio: 10
+    };
+
+    function desenharBola() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.beginPath();
+      ctx.arc(bola.x, bola.y, bola.raio, 0, Math.PI * 2);
+      ctx.fillStyle = 'blue';
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function atualizarPainel() {
+      painelX.innerText = bola.x.toFixed(0);
+      painelY.innerText = bola.y.toFixed(0);
+    }
+
+    function moverBola(e) {
+      const distancia = 5;
+
+      switch (e.key) {
+        case 'ArrowUp':
+          bola.y -= distancia;
+          break;
+        case 'ArrowDown':
+          bola.y += distancia;
+          break;
+        case 'ArrowLeft':
+          bola.x -= distancia;
+          break;
+        case 'ArrowRight':
+          bola.x += distancia;
+          break;
+      }
+
+      desenharBola();
+      atualizarPainel();
+    }
+
+    document.addEventListener('keydown', moverBola);
+    desenharBola();
+  </script>
+</body>
+</html>
