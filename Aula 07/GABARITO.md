@@ -10,3 +10,20 @@
 8. A
 9. B
 10. C
+11.
+
+```js
+let numeros = [1, 2, 3, 4, 5]
+let soma = 0
+
+for (let i = 0; i < numeros.length; i++) {
+  soma += numeros[i]
+}
+
+if (numeros.length === 0) {
+  soma = 0
+}
+
+console.log(soma)
+```
+
