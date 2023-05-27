@@ -110,3 +110,5 @@ while (i < 10) {
 - B. Imprime os números de 0 a 9 na tela
 - C. Causa um erro porque o código está incompleto
 - D. Imprime o número 10 na tela
+
+## 11. Escreva um programa em JavaScript que receba um array de números como entrada e retorne a soma de todos os números no array. Se o array estiver vazio, o programa deve retornar 0.
