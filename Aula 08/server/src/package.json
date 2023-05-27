@@ -1,0 +1,13 @@
+{
+  "name": "aula-08-server",
+  "version": "1.0.0",
+  "description": "Aula 08",
+  "main": "server.js",
+  "repository": "https://github.com/skvggor/associacao-dona-jo_curso-de-computacao/tree/main/Aula%2008",
+  "author": "skvggor (Marcos Lima)",
+  "license": "GPL v3",
+  "dependencies": {
+    "@fastify/static": "^6.10.2",
+    "fastify": "^4.17.0"
+  }
+}

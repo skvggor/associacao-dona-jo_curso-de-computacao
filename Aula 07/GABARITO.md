@@ -4,7 +4,7 @@
 2. B
 3. B
 4. A
-5. B
+5. Anulada
 6. B
 7. A
 8. A
