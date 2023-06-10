@@ -1,0 +1,9 @@
+{
+  "name": "iss-location",
+  "version": "1.0.0",
+  "description": "Get the current position of the International Space Station",
+  "main": "ISS.mjs",
+  "scripts": {
+    "start": "node ISS.mjs"
+  }
+}
