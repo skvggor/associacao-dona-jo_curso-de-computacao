@@ -30,4 +30,17 @@ const simulacao = (numeroDeVezes, valorDaAposta) => {
   return `Valor apostado: ${paraReais(valorApostadoTotal)}\nValor retornado: ${paraReais(totalRetornado)}\nLucro: ${paraReais(lucro)}`
 }
 
-console.log(simulacao(10, 1)) //Aqui 10 é o valor da aposta por jogo.
+const loadingEffect = async () => {
+  process.stdout.write("Calculando o resultado...")
+
+  const SECONDS = 5
+
+  for (let i = 0; i < SECONDS; i += 1) {
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    process.stdout.write('.')
+  }
+
+  process.stdout.write("\n" + simulacao(10, 1)) // Aqui 1 é o valor (R$) da aposta por jogo e 10 são quantas vezes vamos jogar.
+}
+
+loadingEffect()

@@ -1,5 +1,7 @@
 import random
 import locale
+import time
+import sys
 
 locale.setlocale(locale.LC_ALL, 'pt_BR.utf8')
 
@@ -31,4 +33,12 @@ def simulacao(numero_de_vezes, valor_da_aposta):
             f"Valor retornado: {para_reais(total_retornado)}\n"
             f"Lucro: {para_reais(lucro)}")
 
-print(simulacao(10, 1))  # Aqui 1 é o valor da aposta por jogo.
+print("Calculando o resultado...", end="")
+sys.stdout.flush()
+
+for _ in range(5):
+    time.sleep(1)
+    print(".", end="")
+    sys.stdout.flush()
+
+print("\n" + simulacao(10, 1))  # Aqui 1 é o valor (R$) da aposta por jogo e 10 são quantas vezes vamos jogar.

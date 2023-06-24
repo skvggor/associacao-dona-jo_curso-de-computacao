@@ -1,4 +1,4 @@
-# Participação em reunião do Núcleo de Tecnologia do MTST
+# Participação: reunião do Núcleo de Tecnologia do MTST
 
 ## Data: 18/06/2023
 
