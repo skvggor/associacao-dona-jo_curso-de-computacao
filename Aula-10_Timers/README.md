@@ -45,7 +45,7 @@ Exemplo:
 ```javascript
 let counter = 0
 
-const limit = 5
+const LIMIT = 5
 const DELAY = 1000
 
 const interval = setInterval(() => {
@@ -53,6 +53,6 @@ const interval = setInterval(() => {
 
   console.log(`Esta mensagem foi impressa ${counter} vezes.`)
 
-  if (count >= limit) clearInterval(interval)
+  if (counter >= LIMIT) clearInterval(interval)
 }, DELAY)
 ```
